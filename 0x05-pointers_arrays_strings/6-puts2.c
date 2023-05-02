@@ -2,19 +2,24 @@
 
 
 /**
- * puts2 - prints one character out of two
- * @str: input
- * Return: print
+ * puts2 - prints every other character of a string
+ * @str: The string to be treated
+ * Return: void
  */
 void puts2(char *str)
-{
-	int i = 0;
 
-	for (; str[i] != '\0'; i++)
+{
+	int i;
+	int j = 0;
+
+	while (str[j] != '\0')
 	{
-		if ((i % 2 == 0)
-			_putchar(str[i]);
-		else
-		        continue;
+	j++;
 	}
+
+	for (i = 0; i < j; i += 2)
+	{
+	_putchar(str[i]);
+	}
+	_putchar('\n');
 }
